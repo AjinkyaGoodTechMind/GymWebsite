@@ -1,0 +1,76 @@
+.signup-container{
+    /* width:400px;
+    height: 300px; */
+/* border: 1px solid red; */
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* background-color: rgb(255, 177, 0); */
+width: 100vw;
+height: 100vh;
+
+/* display: flex;
+align-items: end;
+justify-content: center; */
+ /* margin: auto; */
+/* margin: 150px 0px 0px 400px; */
+}
+.signup-image{
+/* object-fit: cover; */
+/* position: absolute; */
+width: 100%;
+height: 100%;
+}
+.signup-div{
+    width:400px;
+    height: 300px;
+/* border: 1px solid black; */
+position: relative;
+top:-550px;
+left:600px;
+background-color: rgba(66, 149, 66, 0.555);
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+gap:20px;
+}
+.signup-div>h3{
+    color: white;
+}
+.signup-div>div{
+    display: flex;
+    gap:10px;
+    /* border: 1px solid green; */
+   
+}
+.signup-div>div>p{
+    color: white;
+    margin-left: 5px;
+    /* text-align: right; */
+}
+.signup-div>div>input{
+    text-align: center;
+   place-items:right;
+   border-radius: 5px;
+}
+.ip1{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 100px;
+}
+.ip3{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 102px;
+}
+.ip2{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 73px;
+}
+.signup-button{
+   margin: 0px 0px 0px 150px;
+   padding: 5px 10px 5px 10px;
+   color: aliceblue;
+   background-color: red;
+   border-radius: 8px;
+   border: none;
+}

@@ -1,0 +1,15 @@
+.coppy-container{
+    width: 100vw;
+    height: 50px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coppy-container>div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+}

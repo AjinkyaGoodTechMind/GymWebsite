@@ -1,0 +1,282 @@
+.plans-container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: rgb(9, 1, 30);
+  padding-bottom: 30px;
+  /* justify-items: center; */
+ /* justify-content: center; */
+ /* justify-self: center; */
+ /* place-items: center; */
+
+}
+.palns-grid{
+
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(200px);
+    /* border: 2px solid red; */
+ /* width: 100vw; */
+gap:20px;
+   
+ justify-content: center; 
+ /* justify-self: center; */
+ /* place-items: center; */
+}
+
+.plans-heading{
+    font-size: 30px;
+font-weight: 400;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: left;
+color:blanchedalmond;
+margin-left: 30px;
+padding: 20px 0px 20px 0px;
+}
+.palns-grid>div{
+    border: 1px solid rgb(245, 245, 242);
+    border-radius: 10px;  
+}
+
+.palns-grid>div>img{
+    width:100%;
+    height: 37%;
+box-sizing: border-box;
+border-radius: 10px 10px 0px 0px;
+object-fit: cover;
+/* place-items:center; */
+}
+
+.palns-grid>div>p,h3,h3+p,h3+p+label+p,label{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    line-height: 45px;
+    /* font-size: 0%; */
+}
+
+.content-box>h3{
+ width: 100%;
+ box-sizing: border-box;
+}
+.content-box>button{
+    padding: 5px 20px 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.content-box{
+margin: 0%;
+padding: 0%;
+margin-left: 10px;
+/* border: 2px solid red; */
+height: auto;
+text-align: justify;
+
+}
+.select-tag{
+    color:black;
+    margin-left:5px;
+}
+/* media queries for Large screen */
+
+@media all and (min-width:769px) and (max-width:1350px){
+   
+      .palns-grid{
+          grid-template-columns: repeat(3,1fr);
+          /* grid-template-rows: repeat(auto); */
+          gap:20px;
+      }
+      
+      .palns-grid>div{
+        width: 90%;
+          border: 1px solid rgb(245, 245, 242);
+          border-radius: 10px;
+          box-sizing: content-box;
+          /* box-sizing: border-box; */
+          
+      }
+      .palns-grid>div>img{
+          width:100%;
+          height: 37%;
+      box-sizing: border-box;
+      border-radius: 10px 10px 0px 0px;
+      object-fit: cover;
+      /* place-items:center; */
+      }
+      .palns-grid>div>p,h3,h3+p,h3+p+label+p,label{
+          margin: 0%;
+          padding: 0%;
+          color: white;
+          line-height: 45px;
+      }
+     
+      
+      .content-box{
+      margin: 0%;
+      padding: 0%;
+      margin-left: 10px;
+      /* border: 2px solid red; */
+      height: auto;
+      text-align: justify;
+      color:black;
+      }
+}
+
+
+/* media queries for Medium screen */
+
+@media all and (min-width:425px) and (max-width:768px){
+
+    .plans-container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        background-color: hsl(257, 94%, 6%);
+        /* padding-bottom: 30px; */
+      }
+    .palns-grid{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(auto);
+        padding: 0px 10px 0px 10px;
+        gap:10px;
+        box-sizing: border-box;
+   
+    }
+
+    .plans-heading{
+        font-size: 30px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color:blanchedalmond;
+    margin-left: 30px;
+    padding: 20px 0px 20px 0px;
+    }
+    .palns-grid>div{
+        border: 1px solid rgb(245, 245, 242);
+        border-radius: 10px;
+        
+        
+    }
+    .palns-grid>div>img{
+        width:100%;
+        height: 40%;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    /* place-items:center; */
+    }
+    .palns-grid>div>p,h3,h3+p,h3+p+label+p,label{
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        line-height: 30px;
+    }
+    .content-box>h3{
+     width: 100%;
+     box-sizing: border-box;
+   
+    }
+    .content-box>button{
+        /* padding: 5px 20px 5px 20px; */
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+    
+    }
+    
+    .content-box{
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10px;
+    /* border: 2px solid red; */
+    height: auto;
+    text-align: justify;
+    
+    }
+    
+}
+
+
+/* media querie for SMALL screens */
+
+@media all and (min-width:300px) and (max-width:424px){
+
+    .palns-grid{
+
+        display: grid;
+        grid-template-columns: repeat(1,200px);
+        grid-template-rows: repeat(300px);
+        /* width: 100vw; */
+        /* gap:10px; */
+     /* justify-content:center; */
+    }
+
+    .plans-heading{
+        font-size: 30px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color:blanchedalmond;
+    margin-left: 30px;
+    padding: 20px 0px 20px 0px;
+    }
+    .palns-grid>div{
+        border: 1px solid rgb(245, 245, 242);
+        border-radius: 10px;
+        width:90%;
+        height: auto;
+    }
+    .palns-grid>div>img{
+        width:100%;
+        height: 40%;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    /* place-items:center; */
+    }
+    .palns-grid>div>p,h3,h3+p,h3+p+label+p,label{
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    .content-box>div :nth-child(1){
+        margin-top: 1px;
+        /* line-height: 20px; */
+        /* height: auto; */
+        /* background-color: aqua; */
+
+    }
+    .content-box>button{
+        /* padding: 5px 20px 5px 20px; */
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        box-sizing: border-box;
+    
+    }
+    
+    .content-box{
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10px;
+    /* border: 2px solid red; */
+    height: auto;
+    text-align: justify;
+    
+    }
+    
+}

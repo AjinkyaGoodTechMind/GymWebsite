@@ -1,0 +1,78 @@
+.login-container{
+    /* width:400px;
+    height: 200px; */
+/* border: 1px solid red; */
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+/* background-color: rgb(255, 177, 0); */
+/* border-radius: 10px; */
+position: absolute;
+width:100vw;
+height: 100vh;
+/* display: flex;
+align-items: end;
+justify-content: center; */
+ /* margin: auto; */
+/* margin: 150px 0px 0px 400px; */
+}
+.login-image{
+   
+    width:100vw;
+    height: 100vh;
+ 
+
+}
+.login-div{
+    position: relative;
+    top:-500px;
+    left:600px;
+    width:400px;
+    height: 200px;
+    border-radius: 10px;
+/* border: 1px solid black; */
+display: flex;
+flex-direction: column;
+gap:20px;
+background-color: rgba(255, 179, 0, 0.503);
+}
+.login-div>h3{
+    color: white;
+}
+.login-div>div{
+    display: flex;
+    gap:10px;
+    /* border: 1px solid green; */
+   
+}
+.login-div>div>p{
+    color: white;
+    margin-left: 5px;
+    /* text-align: right; */
+}
+.login-div>div>input{
+    text-align: center;
+   place-items:right;
+   border-radius: 5px;
+}
+.ip1{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 100px;
+}
+.ip3{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 102px;
+}
+.ip2{
+    /* align-items: end;
+    justify-self: right; */
+    margin:0px 0px 0px 73px;
+}
+.login-button{
+   margin: 0px 0px 0px 150px;
+   padding: 5px 10px 5px 10px;
+   color: aliceblue;
+   background-color: red;
+   border-radius: 8px;
+   border: none;
+}

@@ -1,0 +1,52 @@
+.form-container{
+    width:300px;
+    position: absolute;
+    height: 400px;
+    border: 2px solid black;
+    top:150px;
+    left:40vw;
+    box-sizing: border-box;
+    /* background-color: rgb(13, 1, 2); */
+    /* display: flex; 
+align-items: center;
+justify-content: center; */
+}
+.form-heading{
+    color: black;
+    width: 100%;
+    background-color: rgb(13, 1, 2);
+    }
+/* .form-table{
+width: 100%;
+} */
+.form{
+    width: 80%;
+    height: 89%;
+    background-color: rgb(19, 20, 20);
+    /* margin-left: 10px; */
+    margin: auto;
+    text-align: justify;
+    
+}
+.form>input,.lab{
+width:90%;
+height: 30px;
+border:1px solid rgb(8, 5, 5);
+border-radius: 5px;
+margin: 20px 0px 0px 10px;
+text-align: center;
+}
+.lab{
+    background-color: white;
+    color:black;
+    width: 60px;
+}
+#select{
+    margin-left: 10px;
+}
+#submit{
+    width:100px;
+color:black;
+border-radius: 5px;
+background-color:rgb(11, 78, 78)
+}
