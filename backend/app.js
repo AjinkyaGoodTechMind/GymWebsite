@@ -12,6 +12,13 @@ const corsOptions = {
 };
 app.options("*", cors(corsOptions));
 
+// Static Middleware
+app.use(express.static(path.join(__dirname, "public")));
+
+// View Engine Setup
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
 // view engine setup
 app.use(logger("dev"));
 app.use(express.json());
@@ -28,10 +35,14 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 const sessionRoutes = require("./routes/sessionRoutes");
 app.use("/api/session", sessionRoutes);
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+app.get("/", function (req, res) {
+  res.render("Demo");
 });
+
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"));
+// });
 
 module.exports = app;
